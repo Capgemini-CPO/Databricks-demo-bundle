@@ -1,0 +1,21 @@
+bundle:
+  name: databricks-ci-cd-demo
+
+targets:
+  qa:
+    workspace:
+      host: ${DATABRICKS_HOST}
+
+resources:
+  jobs:
+    sample_job:
+      name: "CI/CD Demo Job"
+      tasks:
+        - task_key: run_notebook
+          notebook_task:
+            notebook_path: /Shared/ci-cd/example_notebook
+          new_cluster:
+            spark_version: 13.3.x-scala2.12
+            node_type_id: Standard_DS3_v2
+            num_workers: 1
+``
