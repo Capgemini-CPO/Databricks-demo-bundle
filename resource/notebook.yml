@@ -1,2 +1,4 @@
-print("Hello from Databricks Asset Bundle CI/CD!")
+# Databricks notebook source
 
+print("Hello! This notebook is deployed using Databricks Asset Bundles")
+``
