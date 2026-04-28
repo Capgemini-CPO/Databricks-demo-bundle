@@ -1,2 +1,13 @@
-notebook_task:
-  notebook_path: /Workspace/notebooks/sample_notebook.py
+resources:
+  jobs:
+    demo_job:
+      name: demo_job_from_bundle
+
+      tasks:
+        - task_key: run_notebook
+          notebook_task:
+            notebook_path: /Workspace/notebooks/sample_notebook.py
+          new_cluster:
+            spark_version: 13.3.x-scala2.12
+            node_type_id: Standard_DS3_v2
+            num_workers: 1
