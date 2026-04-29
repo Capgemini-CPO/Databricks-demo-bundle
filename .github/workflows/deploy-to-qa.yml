@@ -8,6 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST_QA }}
+      DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN_QA }}
 
     steps:
       - name: Checkout Repo
@@ -15,11 +18,6 @@ jobs:
 
       - name: Install Databricks CLI
         uses: databricks/setup-cli@v0.211.0
-
-      - name: Configure Databricks Auth
-        run: |
-          echo "DATABRICKS_HOST=${{ secrets.DATABRICKS_HOST_QA }}" >> $GITHUB_ENV
-          echo "DATABRICKS_TOKEN=${{ secrets.DATABRICKS_TOKEN_QA }}" >> $GITHUB_ENV
 
       - name: Validate Bundle
         run: databricks bundle validate
