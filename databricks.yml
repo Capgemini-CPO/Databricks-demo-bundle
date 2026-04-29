@@ -13,7 +13,7 @@ resources:
       tasks:
         - task_key: run_notebook
           notebook_task:
-            notebook_path: /Shared/ci-cd/example_notebook
+            notebook_path: https://adb-7405604937003813.13.azuredatabricks.net/
           new_cluster:
             spark_version: 13.3.x-scala2.12
             node_type_id: Standard_DS3_v2
