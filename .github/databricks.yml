@@ -3,9 +3,6 @@ bundle:
   targets:
   dev:
     workspace:
-      host: https://adb-7405618580636150.10.azuredatabricks.net/
+      host: https://adb-7405604937003813.13.azuredatabricks.net/
 
-  qa:
-    workspace:
-      host: https://adb-7405608612939104.4.azuredatabricks.net/
-``
+
