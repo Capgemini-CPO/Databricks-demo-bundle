@@ -1,4 +1,1 @@
-# Databricks notebook source
 
-print("Hello! This notebook is deployed using Databricks Asset Bundles")
-``
