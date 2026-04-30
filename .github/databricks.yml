@@ -1,8 +1,8 @@
 bundle:
   name: databricks-demo-bundle
   targets:
-  dev:
+  qa:
     workspace:
-      host: https://adb-7405604937003813.13.azuredatabricks.net/
+      host: https://adb-7405618763362463.3.azuredatabricks.net/
 
 
