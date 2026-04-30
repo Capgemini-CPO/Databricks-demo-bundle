@@ -1,20 +1,12 @@
+
 bundle:
-  name: databricks-ci-cd-demo
+  name: databricks-demo-bundle
+
 
 targets:
   dev:
     workspace:
-      host: ${DATABRICKS_HOST}
-
-resources:
-  jobs:
-    sample_job:
-      name: "CI/CD Demo Job"
-      tasks:
-        - task_key: run_notebook
-          notebook_task:
-            notebook_path: https://adb-7405604937003813.13.azuredatabricks.net/
-          new_cluster:
-            spark_version: 13.3.x-scala2.12
-            node_type_id: Standard_DS3_v2
-            num_workers: 1
+      host: https://adb-7405604937003813.13.azuredatabricks.net/
+  qa:
+    workspace:
+      host: https://adb-7405618763362463.3.azuredatabricks.net/
