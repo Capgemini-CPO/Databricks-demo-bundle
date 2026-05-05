@@ -7,6 +7,7 @@ targets:
   dev:
     workspace:
       host: https://adb-7405604937003813.13.azuredatabricks.net/
+ targets:
   qa:
     workspace:
-      host: https://adb-7405618763362463.3.azuredatabricks.net/
+      host: ${DATABRICKS_HOST}
