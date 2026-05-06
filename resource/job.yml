@@ -6,5 +6,5 @@ resources:
         - task_key: notebook-task
           notebook_task:
             notebook_path: ../notebooks/my_notebook.py
-          existing_cluster_id: abc-123
+          existing_cluster_id: 0430-041242-z394xd3u
 ``
